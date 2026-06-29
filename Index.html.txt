@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Plataforma de Sorteio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎲 Plataforma de Sorteio</h1>
+
+<p>Sorteie qualquer número entre um intervalo.</p>
+
+<div class="inputs">
+
+<input
+type="number"
+id="minimo"
+placeholder="Número mínimo">
+
+<input
+type="number"
+id="maximo"
+placeholder="Número máximo">
+
+</div>
+
+<button onclick="sortear()">
+
+🎲 Sortear
+
+</button>
+
+<div id="resultado">
+
+?
+
+</div>
+
+<button id="copiar" onclick="copiarNumero()">
+
+📋 Copiar Resultado
+
+</button>
+
+<div class="estatisticas">
+
+<div>
+
+<h2 id="contador">
+
+0
+
+</h2>
+
+<span>Sorteios</span>
+
+</div>
+
+</div>
+
+<div class="historico">
+
+<h3>Últimos Sorteios</h3>
+
+<ul id="listaHistorico">
+
+</ul>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
